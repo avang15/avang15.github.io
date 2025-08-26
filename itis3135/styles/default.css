@@ -1,6 +1,5 @@
 body {
   background-color:rgb(231, 231, 231);
-  text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -14,23 +13,37 @@ a:hover {
   text-decoration: none;
 }
 
-main {
+
+header {
   text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+main {
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 300px;
 }
 
-h2 {
+footer {
   text-align: center;
-}
-
-img {
-  width: 200px;
-  border-radius: 10px;
 }
 
 ul {
   text-align: left;
+}
+
+.profile-img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+figure {
+  text-align: center
 }
 
 figcaption {
