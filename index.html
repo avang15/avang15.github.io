@@ -15,47 +15,62 @@
       width: 90%;
       max-width: 900px;
       margin: 0 auto;
+      line-height: 1.6; /* BEGIN: Improved line height */
+      padding: 20px; /* BEGIN: Added padding to fill space */
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
       text-align: center;
       color: #005f73; 
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+      font-size: 3rem; /* BEGIN: Increased font size */
+      margin-bottom: 20px; /* BEGIN: Increased margin */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* BEGIN: Added text shadow */
     }
 
     h2 {
       font-family: 'Playfair Display', serif;
       color: #005f73; 
-      font-size: 1.8rem;
-      margin-top: 20px;
+      font-size: 2rem; /* BEGIN: Increased font size */
+      margin-top: 30px; /* BEGIN: Increased margin */
+      border-bottom: 2px solid #005f73; /* BEGIN: Added bottom border */
+      padding-bottom: 10px; /* BEGIN: Increased padding */
+    }
+
+    .content {
+      display: flex; /* BEGIN: Flexbox for layout */
+      align-items: center; /* BEGIN: Center items vertically */
+    }
+
+    .profile-img {
+      max-width: 400px; /* BEGIN: Increased max-width */
+      width: 100%;
+      height: auto;
+      margin-right: 20px; /* BEGIN: Added margin to the right */
+      border-radius: 10px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* BEGIN: Added box shadow */
     }
 
     footer {
       margin-top: 40px;
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 1rem; /* BEGIN: Increased font size */
+      padding: 20px 0; /* BEGIN: Added padding */
+      background-color: #e0fbfc; /* BEGIN: Added background color */
+      border-top: 2px solid #005f73; /* BEGIN: Added top border */
     }
 
     footer a {
       color: #0077b6;
       text-decoration: none;
-      margin: 0 8px;
+      margin: 0 10px; /* BEGIN: Increased margin */
+      transition: color 0.3s; /* BEGIN: Added transition */
     }
 
     footer a:hover {
       text-decoration: underline;
+      color: #005f73; /* BEGIN: Changed hover color */
     }
-
-    .profile-img {
-      display: block;
-      max-width: 200px;
-      width: 100%;
-      height: auto;
-      margin: 10px auto;
-      border-radius: 10px; 
-  }
   </style>
 
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -68,9 +83,13 @@
 
   <main>
     <h2>Welcome to my portfolio website! </h2>
-    <img src="itis3135/images/self.jpg" alt="self portrait" class="profile-img">
-    <p>I am a UNC Charlotte student pursuing a Bachelor's degree in Computer Science with a concentration in Cybersecurity.</p>
-    <p>In my free time, I enjoy listening to music, playing piano, and trying new food!</p>
+    <div class="content"> <!-- BEGIN: Flex container -->
+      <img src="itis3135/images/self.jpg" alt="self portrait" class="profile-img">
+      <div>
+        <p>I am a UNC Charlotte student pursuing a Bachelor's degree in Computer Science with a concentration in Cybersecurity.</p>
+        <p>In my free time, I enjoy listening to music, playing piano, and trying new food!</p>
+      </div>
+    </div> <!-- END: Flex container -->
   </main>
 
   <footer>
