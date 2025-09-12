@@ -3,29 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Vang Innovations!</title>
+  <title>Vang Innovations | Vang Innovations Services</title>
 
   <style>
-    /* COLORS: B370B0 62BEC1 00635D 46237A F9F4F5*/
-    
+    /* Color palette: https://coolors.co/b370b0-62bec1-00635d-46237a-f9f4f5
+    COLORS: B370B0 62BEC1 00635D 46237A F9F4F5 */
     body {
-      margin-left: 20px; /* BEGIN: Add left margin */
-      margin-right: 20px; /* Add right margin */
-    } /* END: Add left and right margins */
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #F9F4F5;
+      color: #222;
+    }
+
+    header {
+      background-color: #46237A;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 15px; /* space between logo and text */
+      justify-content: center; /* center everything */
+    }
+
+    header img {
+      display: inline-block;
+    }
 
     h1 {
-      font-size: 1.5em; /* Large font size */
-      color: black; /* Black color */
-      text-align: center; /* Centered text */
-      font-family: 'Arial', sans-serif; /* Sleek modern font */
+      font-size: 2em;
+      margin: 0;
+      letter-spacing: 1px;
     }
 
     h2 {
-      font-size: 2em; /* Larger than h1 */
-      color: black; /* Same color as h1 */
-      text-align: left; /* Left aligned */
-      font-family: 'Arial', sans-serif; /* Same font as h1 */
-      margin-top: 0; /* Start at the top of the main body */
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #46237A;
+    }
+
+    h3 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #46237A;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-left: 10px;
+    }
+
+    strong {
+      font-size: 18px;
+      color: #00635D;
+      font-weight: bold;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: #B370B0;
+      margin: 40px 0;
+      border-radius: 5px;
+    }
+
+    .intro {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding: 40px;
+      box-sizing: border-box; /* Prevents padding from causing overflow */
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .theme-image-1 {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+      border: 2px solid #62BEC1;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .list-section {
+      text-align: center;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    .list-item {
+      color: #00635D;
+      border: 2px solid #62BEC1;
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      font-size: 18px;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .list-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-section {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin: 40px;
+    }
+
+    .contact-section h3 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #46237A;
+    }
+
+    .contact-section p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-left: 10px;
+    }
+
+    .contact-box {
+      margin-top: 20px;
+      border: 2px solid #62BEC1;
+      border-radius: 12px;
+      width: 50%;
+    }
+
+    .contact-box p {
+      color: #00635D;
+      line-height: 1;
+    }
+
+    footer {
+      background-color: #46237A;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      margin-top: 50px;
     }
 
   </style>
@@ -34,15 +167,55 @@
 </head>
 <body>
   <header>
+    <img src="/itis3135/images/vanginnovations-logo.png" alt="Vang Innovations logo" height="48" width="48">
     <h1>Vang Innovations</h1>
   </header>
 
   <main>
-    <h2>Vang Innovations Services</h2>
+    <section class="intro">
+      <section class="text-content">
+        <h2>Vang Innovations Services</h2>
+        <p class="description">
+          At Vang Innovations, <strong>We</strong> believe every brand has a unique story to tell. <strong>Are</strong> you ready to stand out in a crowded market? Our team of passionate <strong>Storytellers</strong> knows how to capture attention and connect emotionally. <strong>That</strong> dedication drives us to <strong>Create</strong> compelling visuals and experiences tailored for your goals. Combining creativity <strong>And</strong> strategy, we carefully <strong>Design</strong> solutions that resonate <strong>Deeply</strong>. All of this we do for the people who make your business thrive <strong>With</strong> your customers and community, strengthening your business <strong>Intention.</strong>
+        </p>
+      </section>
+      
+      <img src="/itis3135/images/theme1.png" alt="theme-image-1" class="theme-image-1">
+    </section>
+
+    <hr>
+
+    <section class="list-section">
+      <h3>What Makes Us Great</h3>
+
+      <ul>
+        <li class="list-item">Quick turnarounds without sacrificing quality or strategy.</li>
+        <li class="list-item">We design based on your brand's voice, not a generic template.</li>
+        <li class="list-item">Your vision drives our creative process — not assumptions.</li>
+        <li class="list-item">We research your industry and audience like it's our own.</li>
+        <li class="list-item">We turn cluttered ideas into clear, compelling visuals.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section class="contact-section">
+      <h3>Reach out to make your design vision a reality!</h3>
+      <p>We would love to hear from you. Whether you are ready to start a project or just want to explore ideas, the team at Vang Innovations is here to help. Reach out and lets start building something meaningful together.</p>
+
+      <section class="contact-box">
+        <p><strong>Contact Info:</strong></p>
+        <p>Email: vanginnovations@gmail.com</p>
+        <p>Phone Number: 777-777-7777</p>
+        <p>Address: 810 Somewhere Street Unit A</p>
+      </section>
+    </section>
+
+    <!-- END: Add paragraph under h2 -->
   </main>
   
   <footer>
-
+    <p>We Are Storytellers That Create And Design Deeply With Intention.</p>
   </footer>
 </body>
 </html>
