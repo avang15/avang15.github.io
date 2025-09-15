@@ -9,79 +9,49 @@
 
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #005f73; /* BEGIN: Background color for left and right margins */
+      font-family: 'Playfair-Display';
+      background-color: #f0f4f8;
       color: #1a1a1a; 
-      width: 100%; /* BEGIN: Full width for body */
-      margin: 0; /* BEGIN: Remove default margin */
-      padding: 0; /* BEGIN: Remove default padding */
-    }
-
-    .main-container {
-      background-color: #f0f4f8; /* BEGIN: Central body background color */
       width: 90%;
       max-width: 900px;
-      margin: 0 auto;
-      line-height: 1.6; /* BEGIN: Improved line height */
-      padding: 20px; /* BEGIN: Added padding to fill space */
+      margin: 0px auto;
+      line-height: 30px;
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
       text-align: center;
-      color: white; /* BEGIN: Changed color to white */
-      font-size: 3rem; /* BEGIN: Increased font size */
-      margin-bottom: 20px; /* BEGIN: Increased margin */
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* BEGIN: Added text shadow */
-      background-color: #005f73; /* BEGIN: Added background color */
-      padding: 10px; /* BEGIN: Added padding */
+      color: #005f73; 
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
 
     h2 {
       font-family: 'Playfair Display', serif;
-      color: white; /* BEGIN: Changed color to white */
-      font-size: 2rem; /* BEGIN: Increased font size */
-      margin-top: 30px; /* BEGIN: Increased margin */
-      border-bottom: 2px solid #005f73; /* BEGIN: Added bottom border */
-      padding-bottom: 10px; /* BEGIN: Increased padding */
-      background-color: #005f73; /* BEGIN: Added background color */
-      padding: 10px; /* BEGIN: Added padding */
-      text-align: center; /* BEGIN: Center text */
+      color: #005f73; 
+      font-size: 1.8rem;
+      margin-top: 20px;
     }
-
-    .content {
-      display: flex; /* BEGIN: Flexbox for layout */
-      align-items: center; /* BEGIN: Center items vertically */
-    }
-
-    .profile-img {
-      max-width: 400px; /* BEGIN: Increased max-width */
-      width: 100%;
-      height: auto;
-      margin-right: 20px; /* BEGIN: Added margin to the right */
-      border-radius: 10px; 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* BEGIN: Added box shadow */
+     
+    h3 {
+      margin-bottom: -10px;
     }
 
     footer {
       margin-top: 40px;
       text-align: center;
-      font-size: 1rem; /* BEGIN: Increased font size */
-      padding: 20px 0; /* BEGIN: Added padding */
-      background-color: #005f73fc; /* BEGIN: Added background color */
-      border-top: 2px solid #005f73; /* BEGIN: Added top border */
+      font-size: 0.9rem;
     }
 
     footer a {
-      color: white;
+      color: #0077b6;
       text-decoration: none;
-      margin: 0 10px; /* BEGIN: Increased margin */
-      transition: color 0.3s; /* BEGIN: Added transition */
+      margin: 0 8px;
     }
 
     footer a:hover {
       text-decoration: underline;
-      color: greenyellow; /* BEGIN: Changed hover color */
+      color: lightsalmon;
     }
   </style>
 
@@ -89,31 +59,40 @@
 
 </head>
 <body>
-  <div class="main-container"> <!-- BEGIN: Main container -->
-    <header>
-      <h1> ~Aiden Vang~</h1>
-    </header>
+  <header>
+    <h1> ~Aiden Vang~</h1>
+    <hr>
+  </header>
 
-    <main>
-      <h2>Welcome to my portfolio website! </h2>
-      <div class="content"> <!-- BEGIN: Flex container -->
-        <img src="itis3135/images/self.jpg" alt="self portrait" class="profile-img">
-        <div>
-          <p>I am a UNC Charlotte student pursuing a Bachelor's degree in Computer Science with a concentration in Cybersecurity.</p>
-          <p>In my free time, I enjoy listening to music, playing piano, and trying new food!</p>
-        </div>
-      </div> <!-- END: Flex container -->
-    </main>
+  <main>
+    <h2>Welcome to my portfolio website! </h2>
+    <p>I am a UNC Charlotte student pursuing a Bachelor's degree in Computer Science with a concentration in Cybersecurity.
+      I graduated from the Charlotte Engineering Early College High School and have been taking courses
+      at Charlotte for over 3 years now!
+      In my free time, I enjoy listening to music, playing piano, and trying new food!
+    </p>
+    <p>Below are some projects I have had the pleasure of working on:</p>
 
-    <footer>
-      <p>
-        <a href="https://github.com/avang15">Github</a> |
-        <a href="https://avang15.github.io/itis3135/">ITIS3135</a> |
-        <a href="https://webpages.charlotte.edu/avang15/">CLT Web</a> |
-        <a href="http://avang15.github.io/">Github.io</a> |
-        <a href="https://www.linkedin.com/in/aiden-vang-3a5517227/">Linkedin</a>
-      </p>
-    </footer>
-  </div> <!-- END: Main container -->
+    <h3>Student-led Career Conversations Podcast</h3>
+    <p>Produced and managed a career-focused podcast to support student exploration by interviewing a diverse range of professionals. Edited and distributed episodes across platforms including Spreaker, Spotify, and school communication channels. Mentored podcast team members in audio production and editing using Audacity.</p>
+
+    <h3>PowerPantry Senior Design Team Project</h3>
+    <p>Led an interdisciplinary research project to develop a prototype IoT system aimed at tracking pantry inventory and reducing food waste. Collaborated with industry professionals and academic mentors to guide technical development and project strategy. Enhanced existing JavaScript and SQL programs to build an integrated inventory tracking application, utilizing HTTP protocols to connect systems via a command-line interface. Oversaw team operations, facilitated class discussions, and managed conflict to maintain project timelines. Presented research findings and the working prototype at the Charlotte Engineering Early College Senior Design Expo.</p>
+
+    <h3>NinerMarket Application Project</h3>
+    <p>Collaborated on the development of a web interface to support professors in managing and evaluating student academic performance. Gained hands-on experience with HTML and CSS to design and implement key site features and individual pages. Recognized with 2nd place in the Diversity Category for promoting inclusive and accessible technology solutions.</p>
+  </main>
+  <hr>
+
+  <footer>
+    <p>
+      <a href="https://github.com/avang15">Github</a> |
+      <a href="https://avang15.github.io/itis3135/">ITIS3135</a> |
+      <a href="https://webpages.charlotte.edu/avang15/">CLT Web</a> |
+      <a href="http://avang15.github.io/">Github.io</a> |
+      <a href="https://www.linkedin.com/in/aiden-vang-3a5517227/">Linkedin</a>
+    </p>
+
+  </footer>
 </body>
 </html>
