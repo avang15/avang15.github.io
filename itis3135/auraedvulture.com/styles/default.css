@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #D8E2DC, #CFCFCF);
+  color: #1D1E2C;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #0A014F;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  font-family: 'Parisienne', cursive;
+  color: whitesmoke;
+  text-shadow: 2px 2px #000;
+}
+
+nav a {
+  color: #ddd;
+  font-family: Cambria;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffb7;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.main-text {
+  flex: 1 1 45%;
+}
+
+h2 {
+  font-family: Cambria;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3066BE;
+}
+
+h3 {
+  font-family: Cambria;
+}
+
+p {
+  font-family: Cambria;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #1D1E2C;
+}
+
+.main-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.main-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #0A014F;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #444;
+  font-style: italic;
+}
+
+footer p {
+  font-family: Cambria;
+  color: whitesmoke;
+}
+
+/* Small animation on load */
+body.fade-in {
+  animation: fadeIn 1.2s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
