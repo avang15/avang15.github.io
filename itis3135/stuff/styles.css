@@ -1,0 +1,33 @@
+h2 {
+  font-family: "Comic Sans MS";
+  margin-top: 9px;
+  margin-bottom: 6px;
+  margin-left: 90px;
+  margin-right: -1px;
+  color: black;
+}
+
+h1 {
+  border-top: 4px solid red;
+  border-right: 45px solid green;
+  border-bottom: 22px solid blue;
+  border-left: 22px solid purple;
+  font-family: "papyrus";
+  margin-top: 10px;
+  margin-bottom: 26px;
+  margin-left: -8px;
+  margin-right: 11px;
+  color: gray;
+}
+
+ul {
+  background-color: yellow;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 65px;
+  margin-top: 10px;
+  margin-bottom: 1010px;
+}
