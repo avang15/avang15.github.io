@@ -10,7 +10,7 @@ a {
 
 a:hover {
   color:forestgreen;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 
