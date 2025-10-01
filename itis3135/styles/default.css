@@ -24,9 +24,13 @@ h1 {
 
 
 main {
-  margin-left: 20%;
-  margin-right: 20%;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 140px;  /* 120px image + 20px buffer */
+  padding-right: 140px;
   margin-bottom: 300px;
+  box-sizing: border-box;  /* ensures padding doesn't exceed width */
 }
 
 footer {
@@ -69,4 +73,60 @@ figcaption {
 .side-image.right {
   top: 0;
   right: 0;
+}
+
+/* === Media Queries for Responsive Design === */
+
+/* -------- Desktop / Large Screens -------- */
+@media screen and (min-width: 981px) {
+  main {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  .profile-img {
+    width: 200px;
+  }
+
+  .side-image {
+    display: block;
+  }
+}
+
+/* -------- Tablets -------- */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  main {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .profile-img {
+    width: 150px;
+  }
+
+  .side-image {
+    opacity: 0.3;
+    width: 80px;
+  }
+}
+
+/* -------- Mobile Devices -------- */
+@media screen and (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+
+  .profile-img {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .side-image {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
