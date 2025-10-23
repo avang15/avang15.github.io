@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aiden Vang's Auraed Vulture || Introduction Form</title>
+  <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <img src="images/birds.jpeg" alt="Decorative Left" class="side-image left">
+  <img src="images/birds.jpeg" alt="Decorative Right" class="side-image right">
+
+  <main>
+    <h2>Introduction Form</h2>
+    <h3>Please submit the form below.</h3>
+    <form id="form">
+      <!-- Name Fields -->
+      <fieldset>
+        <legend>Name Information</legend>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" value="Aiden" placeholder="Enter your first name" required><br>
+
+        <label for="middle-name">Middle Name (Optional):</label>
+        <input type="text" id="middle-name" value="" placeholder="Enter your middle name"><br>
+
+        <label for="nickname">Nickname (Optional):</label>
+        <input type="text" id="nickname" value="" placeholder="Enter your nickname"><br>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" value="Vang" placeholder="Enter your last name" required>
+      </fieldset>
+
+      <!-- Mascot & Divider -->
+      <fieldset>
+        <legend>Mascot & Divider</legend>
+        <label for="mascot-adjective">Mascot Adjective:</label>
+        <input type="text" id="mascot-adjective" value="Auraed" placeholder="Enter mascot adjective" required><br>
+
+        <label for="mascot-animal">Mascot Animal:</label>
+        <input type="text" id="mascot-animal" value="Vulture" placeholder="Enter mascot animal" required><br>
+
+        <label for="divider">Divider Symbol:</label>
+        <input type="text" id="divider" value="|" placeholder="Enter divider symbol" required>
+      </fieldset>
+
+      <!-- Picture -->
+      <fieldset>
+        <legend>Profile Picture</legend>
+        <label for="picture">Upload Picture:</label>
+        <input type="file" id="picture"><br>
+        <button type="button" onclick="loadImage()">Load Image</button>
+        <div id="loadImage">
+          <img src="images/self2.jpg" alt="aiden vang" class="profile-img" style="max-width: 300px; display:block; margin-top:10px;">
+        </div>
+        <label for="caption">Picture Caption:</label>
+        <input type="text" id="caption" value="Endearing Prom Photo, 2023" placeholder="Enter a caption for your picture">
+      </fieldset>
+
+      <!-- Backgrounds -->
+      <fieldset>
+        <legend>Backgrounds & Statement</legend>
+        <label for="personal-statement">Personal Statement:</label>
+        <input type="text" id="personal-statement" value="Hi, I am Aiden! I am studying Computer Science with a concentration in Cybersecurity. I was born and raised in Charlotte and attended the early college here at UNC Charlotte. In my free time, I enjoy listening to music, playing piano, and trying new food." placeholder="Enter your personal statement" required><br>
+
+        <label for="personal-background">Personal Background:</label>
+        <input type="text" id="personal-background" value="I am a native Charlottean who grew up just down the road from campus. I am the oldest of two younger siblings and I am the first in my family to enroll in college directly after high school." placeholder="Enter your personal background" required><br>
+
+        <label for="professional-background">Professional Background:</label>
+        <input type="text" id="professional-background" value="My first job was being a multifaceted team member at Jersey Mikes. Since then, I have been able to intern at Mecklenburg County’s Information Technology department as a quality service intern." placeholder="Enter your professional background" required><br>
+
+        <label for="academic-background">Academic Background:</label>
+        <input type="text" id="academic-background" value="I am a Computer Science major with a concentration in cybersecurity. I am technically a first year, but I recently graduated from UNC Charlotte’s Early College and am a Junior by credits." placeholder="Enter your academic background" required><br>
+
+        <label for="primary-computer">Primary Computer:</label>
+        <input type="text" id="primary-computer" value="Apple Macbook Pro laptop, bedroom desk" placeholder="Enter your primary computer" required>
+      </fieldset>
+
+      <!-- Courses -->
+      <fieldset>
+        <legend>Courses</legend>
+        <div id="courses-container">
+          <div class="course-item">
+            <input type="text" name="course-dept[]" value="ITSC" placeholder="Department" required>
+            <input type="text" name="course-num[]" value="3688" placeholder="Number" required>
+            <input type="text" name="course-name[]" value="Computers and Their Impact On Society" placeholder="Course Name" required>
+            <input type="text" name="course-reason[]" value="I am interested to learn more about the current conversation around computer ethics, specifically with the advancements of AI." placeholder="Reason" required>
+            <button type="button" onclick="deleteCourse(this)">Delete</button>
+          </div>
+          <div class="course-item">
+            <input type="text" name="course-dept[]" value="INFO" placeholder="Department" required>
+            <input type="text" name="course-num[]" value="2130" placeholder="Number" required>
+            <input type="text" name="course-name[]" value="Business Computing" placeholder="Course Name" required>
+            <input type="text" name="course-reason[]" value="I am looking to develop proficiency in Microsoft in order to diversify my technical portfolio and skills." placeholder="Reason" required>
+            <button type="button" onclick="deleteCourse(this)">Delete</button>
+          </div>
+          <div class="course-item">
+            <input type="text" name="course-dept[]" value="ITIS" placeholder="Department" required>
+            <input type="text" name="course-num[]" value="3135" placeholder="Number" required>
+            <input type="text" name="course-name[]" value="Front-End Web Application Development" placeholder="Course Name" required>
+            <input type="text" name="course-reason[]" value="This class is a degree requirement and will help me understand how web applications are developed." placeholder="Reason" required>
+            <button type="button" onclick="deleteCourse(this)">Delete</button>
+          </div>
+          <div class="course-item">
+            <input type="text" name="course-dept[]" value="STAT" placeholder="Department" required>
+            <input type="text" name="course-num[]" value="2122" placeholder="Number" required>
+            <input type="text" name="course-name[]" value="Intro to Probability & Statistics" placeholder="Course Name" required>
+            <input type="text" name="course-reason[]" value="This class is a degree requirement and will connect with knowledge learned in my other math courses." placeholder="Reason" required>
+            <button type="button" onclick="deleteCourse(this)">Delete</button>
+          </div>
+        </div>
+        <button type="button" id="add-course">Add Course</button>
+      </fieldset>
+
+      <!-- Additional Info -->
+      <fieldset>
+        <legend>Additional</legend>
+        <label for="funny">Funny/Interesting to Remember:</label>
+        <input type="text" id="funny" value="I cannot swim!" placeholder="Enter something funny or interesting"><br>
+
+        <label for="additional">Additional Sharing:</label>
+        <input type="text" id="additional" value="I’m looking to join a study group for this class!" placeholder="Enter additional sharing"><br>
+
+        <label for="quote">Quote:</label>
+        <input type="text" id="quote" value="I have not failed. I’ve just found 10,000 ways that won’t work." placeholder="Enter a favorite quote" required><br>
+
+        <label for="quote-author">Quote Author:</label>
+        <input type="text" id="quote-author" value="Thomas Edison" placeholder="Enter the author of the quote" required>
+      </fieldset>
+
+      <!-- Links -->
+      <fieldset>
+        <legend>Links</legend>
+        <label for="github-link">Github:</label>
+        <input type="text" id="github-link" value="https://github.com/avang15" placeholder="Enter your Github link"><br>
+
+        <label for="course-link">Course Website (Github):</label>
+        <input type="text" id="course-link" value="https://avang15.github.io/itis3135/" placeholder="Enter course website link"><br>
+
+        <label for="university-link">University Webpage:</label>
+        <input type="text" id="university-link" value="https://webpages.charlotte.edu/avang15/" placeholder="Enter university webpage link"><br>
+
+        <label for="personal-link">Personal Website (Github.io):</label>
+        <input type="text" id="personal-link" value="http://avang15.github.io/" placeholder="Enter personal website link"><br>
+
+        <label for="linkedin-link">LinkedIn:</label>
+        <input type="text" id="linkedin-link" value="https://www.linkedin.com/in/aiden-vang-3a5517227/" placeholder="Enter LinkedIn profile link">
+      </fieldset>
+
+      <!-- Acknowledgment -->
+      <fieldset>
+        <legend>Acknowledgment</legend>
+        <label for="ack-statement">Acknowledgment Statement:</label>
+        <input type="text" id="ack-statement" value="I acknowledge the information" placeholder="Enter acknowledgment statement" required><br>
+
+        <label for="ack-date">Acknowledgment Date:</label>
+        <input type="date" id="ack-date" value="2025-10-23" required>
+      </fieldset>
+
+      <button type="button" onclick="submitData()">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button" id="clearButton">Clear</button>
+    </form>
+
+    <hr>
+
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script src="scripts/introduction.js"></script>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
+
+
+

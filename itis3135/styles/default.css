@@ -95,6 +95,18 @@ th, td {
   word-wrap: break-word;
 }
 
+input[type="text"] {
+  margin-top: 5px;
+  height: 40px;
+  width: 70%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
   table, thead, tbody, th, td, tr {
     display: block;
