@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hmong Student Association | Contact</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- Dynamic Header -->
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <!-- Welcome Section -->
+    <section class="welcome contact">
+      <h1>Contact & Join HSA</h1>
+      <p>Have questions or want to become a member? Fill out our form below!</p>
+    </section>
+
+    <!-- Contact & Membership Form Section -->
+    <section class="generic-section">
+      <div class="contact-form">
+        <h2>Contact & Membership Form</h2>
+        <form id="membershipForm">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+
+          <label for="major">Major / Department</label>
+          <input type="text" id="major" name="major" placeholder="Your major or department">
+
+          <label for="membershipType">Membership Type</label>
+          <select id="membershipType" name="membershipType" required>
+            <option value="">Select an option</option>
+            <option value="student">Student Member</option>
+            <option value="alumni">Alumni</option>
+            <option value="community">Community Member</option>
+          </select>
+
+          <label for="message">Questions / Comments</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your questions or comments here..."></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Completion Message -->
+    <section class="completion-message" id="completionMessage">
+      <h2>Thank you for reaching out!</h2>
+      <p id="nameOutput"></p>
+      <p id="emailOutput"></p>
+      <p id="majorOutput"></p>
+      <p id="membershipOutput"></p>
+      <p id="messageOutput"></p>
+      <p>We will get back to you shortly.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; Designed by Vang Innovations 2025
+  </footer>
+
+  <!-- Include dynamic header script -->
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <!-- Link to external contact JS -->
+  <script src="scripts/contact.js"></script>
+</body>
+</html>

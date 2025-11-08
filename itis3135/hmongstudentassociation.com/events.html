@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hmong Student Association | Events</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- Dynamic Header -->
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <!-- Welcome Section -->
+    <section class="welcome events">
+      <h1>Upcoming Events</h1>
+      <p>Check out what HSA has planned! Search, filter, and find events you want to attend.</p>
+    </section>
+
+    <!-- Event Search Section -->
+    <section class="generic-section event-search">
+      <input type="text" placeholder="Search events..." id="eventSearch">
+      <div class="event-categories">
+        <button>All</button>
+        <button>Cultural</button>
+        <button>Workshops</button>
+        <button>Social</button>
+        <button>Collaborations</button>
+      </div>
+    </section>
+
+    <!-- Event Listings Section -->
+    <section class="event-listings">
+      <div class="event-card">
+        <h3>Hmong New Year Celebration</h3>
+        <p><strong>Date:</strong> November 15, 2025</p>
+        <p><strong>Category:</strong> Cultural</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="event-card">
+        <h3>Leadership Workshop</h3>
+        <p><strong>Date:</strong> December 5, 2025</p>
+        <p><strong>Category:</strong> Workshops</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="event-card">
+        <h3>Community Service Day</h3>
+        <p><strong>Date:</strong> January 10, 2026</p>
+        <p><strong>Category:</strong> Social</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="event-card">
+        <h3>Joint Collaboration with ABC Club</h3>
+        <p><strong>Date:</strong> February 20, 2026</p>
+        <p><strong>Category:</strong> Collaborations</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; Designed by Vang Innovations 2025
+  </footer>
+
+  <!-- Include dynamic header script -->
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="scripts/events.js"></script>
+</body>
+</html>
